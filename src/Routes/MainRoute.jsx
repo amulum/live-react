@@ -13,10 +13,10 @@ const MainRoute = () => {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/profile" component={Profile}/>
+                <Route exact path="/login" component={Login}/>
                 <Route exact path="/:category" component={MovieCategory}/>
                 <Route exact path="/cooming-soon" component={NotMatch}/>
-                <Route path="/login" component={Login}/>
-                <Route path="/profile" component={Profile}/>
             </Switch>
         </BrowserRouter>
     )

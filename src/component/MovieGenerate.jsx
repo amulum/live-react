@@ -12,7 +12,7 @@ class MovieGenerate extends React.Component {
         const { listMovieDetail, isLoading } = this.props;
         // filter news yang ada content dan imagenya
         const getMovie = listMovieDetail.filter(item => {
-            if (item.Poster !== null) {
+            if (item.Poster !== null && item.Category === this.props.selected) {
                 return item;
             }
             return false;
